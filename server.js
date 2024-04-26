@@ -1,9 +1,7 @@
 const express = require('express');
 const app = express();
- 
-app.get('/', (req, res) => {
-  res.send("Mviko");
-});
+
+app.use('/', require('./routes/index'))
 
 const port = 3000;
  
